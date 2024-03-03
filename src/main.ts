@@ -16,6 +16,8 @@ async function bootstrap() {
   SwaggerModule.setup('/api/docs', app, document);
 
   await app.listen(port);
-  console.log(`start server in \x1b[1m${process.env.NODE_ENV}\x1b[0m mode on port \x1b[1m${port}\x1b[0m`);
+  console.log(
+    `start server in \x1b[1m${process.env.NODE_ENV}\x1b[0m mode on port \x1b[1m${port}\x1b[0m`,
+  );
 }
 bootstrap();
