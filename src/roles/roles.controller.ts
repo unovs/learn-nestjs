@@ -17,4 +17,9 @@ export class RolesController {
   getByName(@Param('name') name: string) {
     return this.rolesService.getRoleByName(name);
   }
+
+  @Get()
+  getAllRoles() {
+    return this.rolesService.getAllRoles();
+  }
 }
