@@ -35,7 +35,7 @@ export class User extends Model<User, UserCreateAttrs> {
 
   @ApiProperty({ example: 'password', description: '' })
   @Column({
-    type: DataType.STRING(20),
+    type: DataType.STRING,
     allowNull: false,
   })
   password: string;
